@@ -30,6 +30,31 @@
 //         },
 //     ],
 // };
+function videoPlay(id){
+    const urlSecreta = "https://platziultrasecreto.com/" + id;
+    console.log("Se está reproduciendo desde la url" + urlSecreta);
+}
+function videoStop(id){
+    const urlSecreta = "https://platziultrasecreto.com/" + id;
+    console.log("Pausamos la url" + urlSecreta);
+}
+
+export class PlatziClass{
+    constructor({
+        name,
+        videoID,
+    }){
+        this.name = name;
+        this.videoID
+    }
+
+    reproducir(){
+        videoPlay(this.videoID);
+    }
+    pausar(){
+        videoStop(this.videoID)
+    }
+}
 class Course {
     constructor({
         id,
@@ -38,10 +63,22 @@ class Course {
         lessons = []
     })
     {
-        this.id = id;
-        this.name = name;
+        this._id = id;
+        this._name = name;
         this.teacher = teacher
         this.lessons = lessons
+    }
+
+    get name(){
+        return this._name;
+    }
+
+    set name(nuevoNombre) {
+        if(nuevoNombre === "Curso Malito de programación básica"){
+            console.error("Web... no")
+        } else {
+            this._name = nuevoNombre;
+        }
     }
 }
 
