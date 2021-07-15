@@ -4,10 +4,66 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles.css">
     <title>Figuras geométricas</title>
 </head>
 <body>
-    <h1> Figuras geométricas</h1>
+    <header>
+        <h1>Figuras geométricas</h1>
+        <p>Taller de curso practico de JS</p>
+    </header>    
+
+<section class="container">
+    <article class="formulario_Cuadrado">
+        <h3>Calcula el área y perimetro de un cuadrado</h3>
+        <form>
+            <label for="InputCuadrado">
+                Escribe cuánto mide cada lado de tu cuadrado:
+            </label>
+            <input type="number" class="inputCuadrado" id="InputCuadrado"/> <br/>
+            <button type="button" class="boton" onclick="calcularPerimetroCuadrado()">
+                Calcular el perímetro
+            </button>
+            <button type="button" class="boton" onclick="calcularAreaCuadrado()">
+                Calcular el área
+            </button>
+        </form>
+    </article>
+    
+    <article class="formulario_Cuadrado">
+        <h3>Calcula el área y perimetro de un triangulo </h3>
+        <form>
+            <label for="InputCuadrado">
+                Escribe cuánto mide cada lado de tu cuadrado:
+            </label>
+            <input type="number" class="inputCuadrado" id="InputTriangulo"/> <br/>
+            <button type="button" class="boton" onclick="calcularPerimetroTriangulo()">
+                Calcular el perímetro
+            </button>
+            <button type="button" class="boton" onclick="calcularAreaCuadrado()">
+                Calcular el área
+            </button>
+        </form>
+    </article>
+
+    <article class="formulario_Cuadrado">
+        <h3>Calcula el área y perimetro de un circulo</h3>
+        <form>
+            <label for="InputCuadrado">
+                Escribe cuánto mide cada lado de tu cuadrado:
+            </label>
+            <input type="number" class="inputCuadrado" id="InputCirculo"/> <br/>
+            <button type="button" class="boton" onclick="calcularPerimetroCuadrado()">
+                Calcular el perímetro
+            </button>
+            <button type="button" class="boton" onclick="calcularAreaCuadrado()">
+                Calcular el área
+            </button>
+        </form>
+    </article>
+
+</section>
+    
 
     <script src="./figuras.js"></script>
 </body>

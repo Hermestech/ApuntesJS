@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+*{
+    margin: none;
+    padding: none;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Space Mono', monospace;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+}
+.formulario_Cuadrado{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    max-width: 350px;
+    height: 300px;
+    border-radius: 15%;
+    background: hsl(183, 100%, 15%)
+}
+.formulario_Cuadrado h3{
+    color: hsl(185, 41%, 84%);
+    padding: 2%;
+}
+.formulario_Cuadrado label{
+    margin-top: -5%;
+    font-size: small;
+    color: hsl(185, 41%, 84%)
+}
+.formulario_Cuadrado input{
+    margin: 2%;
+    height: 50px;
+    width: 80%;
+}
+.formulario_Cuadrado .inputCuadrado{
+    background-color: hsl(172, 67%, 45%);
+    border: 0;
+    border-radius: 15px;
+    font-size: x-large;
+    color: hsl(183, 100%, 15%);
+}
+
+.formulario_Cuadrado .boton{
+   border-radius: 15%;
+
+}
