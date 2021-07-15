@@ -153,6 +153,24 @@ class Student {
     }
 }
 
+class FreeStudent extends Student{
+    constructor(props) {
+        super(props);
+    }
+}
+
+class BasicStudent extends Student{
+    constructor(props) {
+        super(props);
+    }
+}
+
+class ExpertStudent extends Student{
+    constructor(props) {
+        super(props);
+    }
+}
+
 const hermes2 = new Student(
     {
         name:"Hermes Aguilar",
