@@ -9,18 +9,54 @@
     display: flex;
     flex-direction: column;
     max-width: 400px;
-    height: 400px;
+    height: 450px;
     border-radius: 5em;
     text-align: center;
-    background-color: red;
+    align-items: center;
+    background-color: #30475E
 }
 .container header{
     margin: 2em;
 }
+.container header h2 {
+    color: white;
+}
 .container .inputPrice, .inputDiscount{
+    
     height: 50px;
     margin: 5px;
 }
 .container .inputDiscount{
-    margin-left: 75px;
+    margin-left: 77px;
+}
+.container form label{
+    color: whitesmoke;
+}
+.container form input {
+    background-color: #214151;
+    color: #42B883;
+}
+.container .boton{
+    border-radius: 35%;
+    width: 40%;
+    height: 70px;
+    margin-top: 10%;
+    margin-bottom: 5%;
+}
+.container .result_Container{
+    display: flex;
+    border-radius: 35%;
+    margin-left: 10%;
+    width: 80%;
+    height: 75px;
+    background-color: #214151;
+    text-align: center;
+    align-content: center;
+
+}
+.result_Container p{
+    margin-left: 2%;
+    margin-top: 7%;
+    font-size: large;
+    color: #42B883;
 }
