@@ -1,3 +1,4 @@
+//Calculo de salario Diario Integrado
 const oneSalary = (salary) =>{
     return(salary / 30)
 }
@@ -69,10 +70,9 @@ function SMI(salary, year){
 
     let subTotal = salarioDiario + primaVacacionalDiario + aguinaldoDiario
 
-    let total = subTotal.toFixed(2)
-
-    return parseFloat(total * 30)
+    return (subTotal * 30)
 }
+//calculo de indemnizaciones 
 
 function calcularTresMeses(salary, year){
     let salarioDiario = SMI(salary, year)    
@@ -86,4 +86,17 @@ function twentyDaysByYear(salary, year){
     let total = twentyDays * year
 
     return parseInt(total)
+}
+
+function mostrarSMI(){
+    const inputSalario = document.getElementById("InputSalarioMensual");
+    const valueSalario = inputSalario.value;
+    const inputYear = document.getElementById("InputAntiguedad")
+    const valueYear = inputYear.value;
+
+    const smi = SMI(valueSalario, valueYear)
+
+    const result = document.getElementById("result");
+    result.innerText = `Tu salario mensual integrado es ${smi.toFixed(2)}`
+
 }
