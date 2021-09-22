@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+        <script>
+            const products = [
+                {todo: 'cocinar', status: 'active'},
+                {todo: 'llamar a clientes', status: 'inactive'},
+                {todo: 'trabajar', status: 'inactive'},
+                {todo: 'estudiar', status: 'active'},
+                {todo: 'lavar trastes', status: 'inactive'},                
+            ];
+            const app = document.getElementById('app');
+
+            products.forEach(product => {
+                app.innerHTML += `<li>${product.todo} - ${product.status}</li>`
+            })
+        </script>
+    </div>
+</body>
+</html>
